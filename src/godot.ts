@@ -183,6 +183,7 @@ async function prepareExecutable(): Promise<void> {
   }
 
   godotExecutablePath = executablePath;
+  core.setOutput('executable_path', godotExecutablePath);
 }
 
 async function prepareTemplates3(): Promise<void> {

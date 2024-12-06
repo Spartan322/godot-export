@@ -58755,6 +58755,7 @@ async function prepareExecutable() {
         external_fs_.chmodSync(executablePath, '755');
     }
     godotExecutablePath = executablePath;
+    core.setOutput('executable_path', godotExecutablePath);
 }
 async function prepareTemplates3() {
     const templateFile = external_path_.join(GODOT_WORKING_PATH, GODOT_TEMPLATES_FILENAME);
